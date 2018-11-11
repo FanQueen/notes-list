@@ -1,0 +1,65 @@
+$red: #e03b2c;
+$dark-red: #c63325;
+$blue: #494efc;
+$dark-blue: #3c41d1;
+$yellow: #e5ed4e;
+$dark-yellow: #ccd341;
+
+.note {
+  display: flex;
+
+  &__text {
+    font-size: inherit;
+    height: 100%;
+    box-sizing: border-box;
+
+    &:disabled {
+        border: 0;
+        color: black;
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+    padding-right: 10px;
+
+    &--unsaved {
+      &::after {
+        content: "*";
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__button {
+    margin-left: 3px;
+    margin-right: 3px;
+
+    &--save {
+      background-color: $blue;
+      color: lightgray;
+
+      &:hover {
+        background-color: $dark-blue;
+      }
+    }
+
+    &--edit {
+      background-color: $yellow;
+
+      &:hover {
+        background-color: $dark-yellow;
+      }
+    }
+
+    &--remove {
+      background-color: $red;
+
+      &:hover {
+        background-color: $dark-red;
+      }
+    }
+  }
+}

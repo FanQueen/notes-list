@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/button-has-type": "warn",
+    "react/destructuring-assignment": [
+      true,
+      "always",
+      { "ignoreClassFields": true }
+    ],
+    "no-return-assign": "warn",
+    "no-plusplus": "warn",
+    "no-unneeded-ternary": "warn"
+  }
+}

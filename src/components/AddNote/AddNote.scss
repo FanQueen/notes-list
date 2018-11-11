@@ -1,0 +1,10 @@
+$green: #74ed7a;
+$dark-green: #69db6e;
+
+.add-note-button {
+  background-color: $green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+}
